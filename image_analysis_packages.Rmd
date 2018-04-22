@@ -11,4 +11,8 @@ load <- c("magick")
 load_pkg(load)
 ```
 
+# Magick
+https://cran.r-project.org/web/packages/magick/vignettes/intro.html
+
+
 

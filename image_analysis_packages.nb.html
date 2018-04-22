@@ -176,44 +176,21 @@ $(document).ready(function () {
 <p>Testing image analysis packages</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG9hZF9wa2cobG9hZClcblxuYGBgIn0= -->
-<pre class="r"><code>load_pkg(load)
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShybXNmdW5zKVxuXG5sb2FkIDwtIGMoXCJtYWdpY2tcIilcbmxvYWRfcGtnKGxvYWQpXG5gYGAifQ== -->
+<pre class="r"><code>library(rmsfuns)
+
+load &lt;- c(&quot;magick&quot;)
+load_pkg(load)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiSW5zdGFsbGluZyBwYWNrYWdlIGludG8g46S847ixQzovVXNlcnMvTG91aXMvRG9jdW1lbnRzL1Ivd2luLWxpYnJhcnkvMy4046S847iyXG4oYXMg46S847ixbGli46S847iyIGlzIHVuc3BlY2lmaWVkKVxuY2Fubm90IG9wZW4gVVJMICdodHRwOi8vd3d3LnN0YXRzLm94LmFjLnVrL3B1Yi9SV2luL3NyYy9jb250cmliL1BBQ0tBR0VTLnJkcyc6IEhUVFAgc3RhdHVzIHdhcyAnNDA0IE5vdCBGb3VuZCdjYW5ub3Qgb3BlbiBVUkwgJ2h0dHA6Ly93d3cuc3RhdHMub3guYWMudWsvcHViL1JXaW4vYmluL3dpbmRvd3MvY29udHJpYi8zLjQvUEFDS0FHRVMucmRzJzogSFRUUCBzdGF0dXMgd2FzICc0MDQgTm90IEZvdW5kJ1xuIn0= -->
-<pre><code>Installing package into 㤼㸱C:/Users/Louis/Documents/R/win-library/3.4㤼㸲
-(as 㤼㸱lib㤼㸲 is unspecified)
-cannot open URL 'http://www.stats.ox.ac.uk/pub/RWin/src/contrib/PACKAGES.rds': HTTP status was '404 Not Found'cannot open URL 'http://www.stats.ox.ac.uk/pub/RWin/bin/windows/contrib/3.4/PACKAGES.rds': HTTP status was '404 Not Found'</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG4gIFRoZXJlIGlzIGEgYmluYXJ5IHZlcnNpb24gYXZhaWxhYmxlIGJ1dCB0aGUgc291cmNlIHZlcnNpb24gaXMgbGF0ZXI6XG4gICAgICAgYmluYXJ5IHNvdXJjZSBuZWVkc19jb21waWxhdGlvblxubWFnaWNrICAgIDEuNyAgICAxLjggICAgICAgICAgICAgIFRSVUVcblxuICBCaW5hcmllcyB3aWxsIGJlIGluc3RhbGxlZFxuIn0= -->
-<pre><code>
-  There is a binary version available but the source version is later:
-       binary source needs_compilation
-magick    1.7    1.8              TRUE
-
-  Binaries will be installed</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoidHJ5aW5nIFVSTCAnaHR0cHM6Ly9jcmFuLnJzdHVkaW8uY29tL2Jpbi93aW5kb3dzL2NvbnRyaWIvMy40L21hZ2lja18xLjcuemlwJ1xuQ29udGVudCB0eXBlICdhcHBsaWNhdGlvbi96aXAnIGxlbmd0aCAxOTg4Njc1MyBieXRlcyAoMTkuMCBNQilcbmRvd25sb2FkZWQgMTkuMCBNQlxuIn0= -->
-<pre><code>trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.4/magick_1.7.zip'
-Content type 'application/zip' length 19886753 bytes (19.0 MB)
-downloaded 19.0 MB</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDigJhtYWdpY2vigJkgc3VjY2Vzc2Z1bGx5IHVucGFja2VkIGFuZCBNRDUgc3VtcyBjaGVja2VkXG5cblRoZSBkb3dubG9hZGVkIGJpbmFyeSBwYWNrYWdlcyBhcmUgaW5cblx0QzpcXFVzZXJzXFxMb3Vpc1xcQXBwRGF0YVxcTG9jYWxcXFRlbXBcXFJ0bXBXZzFNSGlcXGRvd25sb2FkZWRfcGFja2FnZXNcbiJ9 -->
-<pre><code>package ‘magick’ successfully unpacked and MD5 sums checked
-
-The downloaded binary packages are in
-    C:\Users\Louis\AppData\Local\Temp\RtmpWg1MHi\downloaded_packages</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiTGlua2luZyB0byBJbWFnZU1hZ2ljayA2LjkuOS4xNFxuRW5hYmxlZCBmZWF0dXJlczogY2Fpcm8sIGZyZWV0eXBlLCBmZnR3LCBnaG9zdHNjcmlwdCwgbGNtcywgcGFuZ28sIHJzdmcsIHdlYnBcbkRpc2FibGVkIGZlYXR1cmVzOiBmb250Y29uZmlnLCB4MTFcbiJ9 -->
-<pre><code>Linking to ImageMagick 6.9.9.14
-Enabled features: cairo, freetype, fftw, ghostscript, lcms, pango, rsvg, webp
-Disabled features: fontconfig, x11</code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<div id="magick" class="section level1">
+<h1>Magick</h1>
+<p><a href="https://cran.r-project.org/web/packages/magick/vignettes/intro.html" class="uri">https://cran.r-project.org/web/packages/magick/vignettes/intro.html</a></p>
 <!-- rnb-text-end -->
+</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIkltYWdlIEFuYWx5c2lzIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KVGVzdGluZyBpbWFnZSBhbmFseXNpcyBwYWNrYWdlcw0KYGBge3J9DQpsaWJyYXJ5KHJtc2Z1bnMpDQoNCmxvYWQgPC0gYygibWFnaWNrIikNCmxvYWRfcGtnKGxvYWQpDQpgYGANCg0KDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIkltYWdlIEFuYWx5c2lzIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KVGVzdGluZyBpbWFnZSBhbmFseXNpcyBwYWNrYWdlcw0KYGBge3J9DQpsaWJyYXJ5KHJtc2Z1bnMpDQoNCmxvYWQgPC0gYygibWFnaWNrIikNCmxvYWRfcGtnKGxvYWQpDQpgYGANCg0KIyBNYWdpY2sNCmh0dHBzOi8vY3Jhbi5yLXByb2plY3Qub3JnL3dlYi9wYWNrYWdlcy9tYWdpY2svdmlnbmV0dGVzL2ludHJvLmh0bWwNCg0KDQoNCg==</div>
 
 
 
